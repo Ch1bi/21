@@ -21,12 +21,19 @@
 
         <div id="table">
 
-            <img ng-src={{image}} alt=""/>
+            <img class="card-img" ng-src={{image}} alt=""/>
         </div>
 
         <div id="player">
-        <input placeholder="Done?">
+
+            <p class="score">{{score}}</p>
+
+            <div class="buttons">
+        <button ng-click="stay()">STAY</button>
         <button ng-click="deal();"type="button">HIT</button>
+            </div>
         </div>
+        
+        <img width="75" class="p-cards" ng-src="https://deckofcardsapi.com/static/img/{{pCards}}.png" alt=""/>   
     </body>
 </html>

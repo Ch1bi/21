@@ -15,17 +15,27 @@ body{
 
 #table{
     
+    display:flex;
+    align-items: center;
+    justify-content: center;
     align-self: center;
     background-color:green;
-    width:500px;
-    height:500px;
+    width:350px;
+    height:350px;
 }
 
 #player{
 
-    margin: 2em 0 0 0;
-
+display: flex;
+flex-direction: column;
+ margin: 2em 0 2em 0;
 align-self: center;
+align-content: center;
+  
+}
 
-   
+
+.score{
+
+    align-self: center;
 }
