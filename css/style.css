@@ -1,14 +1,31 @@
 body{
 
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-
+    align-content: space-around;
 }
 
-.player{
+#computer{
 
-align-self: flex-end;
+    margin: 2em 0 2em 0;
+    align-self: center;
+}
+
+#table{
+    
+    align-self: center;
+    background-color:green;
+    width:500px;
+    height:500px;
+}
+
+#player{
+
+    margin: 2em 0 0 0;
+
+align-self: center;
 
    
 }

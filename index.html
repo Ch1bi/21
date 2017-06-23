@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="cardApp">
     <head>
         <title>Cards</title>
         <meta charset="UTF-8">
@@ -7,18 +7,26 @@
         <link href="css/style.css" rel="stylesheet">
         
         <!--AngularJS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+        <script src="js/controllers/cardController.js"></script>
     </head>
-    <body>
 
-        <div class="table">
+    <body ng-controller="cardControl">
 
-           
+        <div id="computer">
+            <p class="text" ng-show="message">Deck Shuffled</p>
+            
+            </div>
+
+        <div id="table">
+
+            <img ng-src={{image}} alt=""/>
         </div>
 
-        <div class="player">
+        <div id="player">
         <input placeholder="Done?">
-        <button type="button">HIT</button>
+        <button ng-click="deal();"type="button">HIT</button>
         </div>
     </body>
 </html>
